@@ -9,9 +9,7 @@ import UIKit
 
 class MoviesView: UIView {
     
-    lazy var backgroundC = ImageViewDefault()
-    
-    lazy var titile = LabelDefault()
+    lazy var titile = LabelDefault(font: .systemFont(ofSize: 24.0, weight: .bold))
         
     lazy var tableView = TableViewDefault()
 
@@ -19,6 +17,7 @@ class MoviesView: UIView {
         super.init(frame: frame)
         addView()
         setConstraints()
+        backgroundColor = UIColor(red: 46/255, green: 19/255, blue: 113/255, alpha: 1.0)
     }
     
     required init?(coder: NSCoder) {
@@ -31,7 +30,6 @@ class MoviesView: UIView {
     }
     
     func addView(){
-        self.addSubview(backgroundC)
         self.addSubview(titile)
         self.addSubview(tableView)
         
@@ -39,11 +37,6 @@ class MoviesView: UIView {
     
     func setConstraints() {
         NSLayoutConstraint.activate([
-            
-            backgroundC.topAnchor.constraint(equalTo: topAnchor),
-            backgroundC.leadingAnchor.constraint(equalTo: leadingAnchor),
-            backgroundC.trailingAnchor.constraint(equalTo: trailingAnchor),
-            backgroundC.bottomAnchor.constraint(equalTo: bottomAnchor),
             
             titile.topAnchor.constraint(equalTo: topAnchor,constant: 87),
             titile.centerXAnchor.constraint(equalTo: centerXAnchor),

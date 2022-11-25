@@ -9,17 +9,18 @@ import UIKit
 
 class ImageViewDefault: UIImageView {
     
-    init() {
+    init(corner: CGFloat = 18) {
         super.init(frame: .zero)
-        initDefault()
+        initDefault(corner: corner)
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func initDefault() {
-        self.backgroundColor = UIColor(red: 46/255, green: 19/255, blue: 113/255, alpha: 1.0)
+    func initDefault(corner: CGFloat) {
+        self.layer.cornerRadius = corner
+        self.clipsToBounds = true
         self.translatesAutoresizingMaskIntoConstraints = false
         
     }

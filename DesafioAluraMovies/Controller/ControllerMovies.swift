@@ -8,6 +8,7 @@
 import UIKit
 
 class ControllerMovies: NSObject {
+    
     var moviesList: Movies?
     let requestMoviews = Request()
     

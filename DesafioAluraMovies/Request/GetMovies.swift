@@ -18,7 +18,6 @@ class Request {
             guard let moviess else {return}
             completion(moviess,true)
         }
-        
         task.resume()
     }
 }

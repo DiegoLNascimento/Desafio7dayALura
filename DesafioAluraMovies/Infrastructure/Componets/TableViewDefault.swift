@@ -22,6 +22,7 @@ class TableViewDefault: UITableView {
     func initDefault() {
         self.backgroundColor = .clear
         self.translatesAutoresizingMaskIntoConstraints = false
+        self.selectionFollowsFocus = false
         self.register(CellsController.self, forCellReuseIdentifier: CellsController.identifier)
     }
 }

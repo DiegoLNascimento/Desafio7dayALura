@@ -7,6 +7,7 @@
 
 import UIKit
 import Foundation
+import SDWebImage
 
 
 class MoviesController: UIViewController {
@@ -63,6 +64,13 @@ extension MoviesController: UITableViewDataSource {
 }
 
 extension MoviesController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+         let detailMovies = DetailController()
+        
+        detailMovies.controllerDetail.moviesListDetail = controller.getIndexPath(indexPath: indexPath)
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+        self.navigationController?.pushViewController(detailMovies, animated: true)
+    }
 }
 

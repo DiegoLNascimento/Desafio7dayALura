@@ -25,6 +25,9 @@
 		F118129C2929D75A00FAB8A0 /* GetMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = F118129B2929D75A00FAB8A0 /* GetMovies.swift */; };
 		F118129E2929DC1D00FAB8A0 /* ControllerMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = F118129D2929DC1D00FAB8A0 /* ControllerMovies.swift */; };
 		F144A7442931093400718242 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F144A7432931093400718242 /* DetailController.swift */; };
+		F144A74629310D6000718242 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F144A74529310D6000718242 /* DetailView.swift */; };
+		F144A748293114D700718242 /* ControllerDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F144A747293114D700718242 /* ControllerDetail.swift */; };
+		F144A74A2931441F00718242 /* FormatedeDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F144A7492931441F00718242 /* FormatedeDate.swift */; };
 		F155D0B3292D9769003A899A /* BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F155D0B2292D9769003A899A /* BackgroundColor.swift */; };
 		F1BF2985292EEFF800E55100 /* LabelDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BF2984292EEFF800E55100 /* LabelDefault.swift */; };
 		F1BF2987292EF26100E55100 /* ImageViewDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BF2986292EF26100E55100 /* ImageViewDefault.swift */; };
@@ -77,6 +80,9 @@
 		F118129B2929D75A00FAB8A0 /* GetMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMovies.swift; sourceTree = "<group>"; };
 		F118129D2929DC1D00FAB8A0 /* ControllerMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerMovies.swift; sourceTree = "<group>"; };
 		F144A7432931093400718242 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
+		F144A74529310D6000718242 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		F144A747293114D700718242 /* ControllerDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerDetail.swift; sourceTree = "<group>"; };
+		F144A7492931441F00718242 /* FormatedeDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatedeDate.swift; sourceTree = "<group>"; };
 		F155D0B2292D9769003A899A /* BackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundColor.swift; sourceTree = "<group>"; };
 		F1BF2984292EEFF800E55100 /* LabelDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelDefault.swift; sourceTree = "<group>"; };
 		F1BF2986292EF26100E55100 /* ImageViewDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewDefault.swift; sourceTree = "<group>"; };
@@ -201,8 +207,8 @@
 		F11812852928722700FAB8A0 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F144A7422931090F00718242 /* Detail */,
 				F11812902928890400FAB8A0 /* Movies */,
+				F144A7422931090F00718242 /* Detail */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -220,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				F118129D2929DC1D00FAB8A0 /* ControllerMovies.swift */,
+				F144A747293114D700718242 /* ControllerDetail.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -254,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				F144A7432931093400718242 /* DetailController.swift */,
+				F144A74529310D6000718242 /* DetailView.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -261,8 +269,8 @@
 		F155D0B0292D96E3003A899A /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
-				F1BF2983292EEFCE00E55100 /* Componets */,
 				F155D0B1292D96EF003A899A /* Extensions */,
+				F1BF2983292EEFCE00E55100 /* Componets */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -271,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				F155D0B2292D9769003A899A /* BackgroundColor.swift */,
+				F144A7492931441F00718242 /* FormatedeDate.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -531,11 +540,14 @@
 				F118125529286B8200FAB8A0 /* AppDelegate.swift in Sources */,
 				F1BF2985292EEFF800E55100 /* LabelDefault.swift in Sources */,
 				F118129C2929D75A00FAB8A0 /* GetMovies.swift in Sources */,
+				F144A748293114D700718242 /* ControllerDetail.swift in Sources */,
 				F144A7442931093400718242 /* DetailController.swift in Sources */,
 				F118125729286B8200FAB8A0 /* SceneDelegate.swift in Sources */,
 				F1BF2987292EF26100E55100 /* ImageViewDefault.swift in Sources */,
 				F155D0B3292D9769003A899A /* BackgroundColor.swift in Sources */,
+				F144A74A2931441F00718242 /* FormatedeDate.swift in Sources */,
 				F118128C2928847300FAB8A0 /* CellsController.swift in Sources */,
+				F144A74629310D6000718242 /* DetailView.swift in Sources */,
 				F118129E2929DC1D00FAB8A0 /* ControllerMovies.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

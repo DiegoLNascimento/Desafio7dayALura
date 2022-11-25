@@ -9,34 +9,12 @@ import UIKit
 
 class CellsView: UIView {
     
-    lazy var poster: UIImageView = {
-        let poster = UIImageView(frame: .zero)
-        poster.layer.cornerRadius = 18
-        poster.clipsToBounds = true
-        poster.translatesAutoresizingMaskIntoConstraints = false
-        return poster
-    }()
-    
-    lazy var nameMovies: UILabel = {
-        let nameMovies = UILabel(frame: .zero)
-        nameMovies.font = .systemFont(ofSize: 16, weight: .bold)
-        nameMovies.textColor = .white
-        nameMovies.textAlignment = .center
-        nameMovies.text = "nameMovies"
-        nameMovies.translatesAutoresizingMaskIntoConstraints = false
-        return nameMovies
-    }()
-    
-    lazy var launchMovies: UILabel = {
-        let launchMovies = UILabel(frame: .zero)
-        launchMovies.font = .systemFont(ofSize: 16, weight: .bold)
-        launchMovies.textColor = .white
-        launchMovies.textAlignment = .center
-        launchMovies.text = "launchMovies"
-        launchMovies.translatesAutoresizingMaskIntoConstraints = false
-        return launchMovies
-    }()
-    
+    lazy var poster = ImageViewDefault()
+        
+    lazy var nameMovies = LabelDefault(font: .boldSystemFont(ofSize: 20.0),textAlignment: .left)
+        
+    lazy var launchMovies = LabelDefault(font: .boldSystemFont(ofSize: 16) ,textColor: .white.withAlphaComponent(0.75), textAlignment: .left)
+        
     override init(frame: CGRect) {
         super.init(frame: frame)
         addView()
@@ -64,12 +42,12 @@ class CellsView: UIView {
             
             nameMovies.topAnchor.constraint(equalTo: topAnchor,constant: 45),
             nameMovies.leadingAnchor.constraint(equalTo: poster.trailingAnchor,constant: 15),
-            nameMovies.widthAnchor.constraint(equalToConstant: 170),
+            nameMovies.widthAnchor.constraint(equalToConstant: 250),
             nameMovies.heightAnchor.constraint(equalToConstant: 19),
             
-            launchMovies.topAnchor.constraint(equalTo: nameMovies.bottomAnchor,constant: 05),
+            launchMovies.topAnchor.constraint(equalTo: nameMovies.bottomAnchor,constant: 12),
             launchMovies.leadingAnchor.constraint(equalTo: poster.trailingAnchor,constant: 15),
-            launchMovies.widthAnchor.constraint(equalToConstant: 138),
+            launchMovies.widthAnchor.constraint(equalToConstant: 200),
             launchMovies.heightAnchor.constraint(equalToConstant: 19),
             
         ])

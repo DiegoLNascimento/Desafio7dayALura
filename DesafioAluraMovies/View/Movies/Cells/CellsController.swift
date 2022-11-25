@@ -9,8 +9,7 @@ import UIKit
 import SDWebImage
 
 class CellsController: UITableViewCell {
-    
-    
+
     static var identifier = "CellsController"
     
     lazy var custonCellsView: CellsView = {
@@ -32,10 +31,10 @@ class CellsController: UITableViewCell {
     }
     
     func dataMovies(data: Result?) {
-        let urlImage = "https://image.tmdb.org/t/p/w500"
+        custonCellsView.poster.sd_setImage(with: URL(string: ("https://image.tmdb.org/t/p/w500\(data?.posterPath ?? "")")))
         custonCellsView.nameMovies.text = data?.originalTitle ?? ""
-        custonCellsView.launchMovies.text = data?.releaseDate ?? ""
-        custonCellsView.poster.sd_setImage(with: URL(string: ( urlImage + (data?.posterPath ?? ""))))
+        custonCellsView.launchMovies.text = ("Lançamento:\(data?.releaseDate?.formatDate() ?? "")")
+        
 
     }
     

@@ -1,0 +1,6 @@
+framework module Pods_DesafioAluraMoviesTests {
+  umbrella header "Pods-DesafioAluraMoviesTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

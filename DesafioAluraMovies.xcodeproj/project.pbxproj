@@ -1,0 +1,873 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		495C11FA008A79273C08B014 /* Pods_DesafioAluraMovies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FAA4889B4D7BDA7E171E988 /* Pods_DesafioAluraMovies.framework */; };
+		6A65026B0EE8E73A378162FC /* Pods_DesafioAluraMoviesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC89DAD99E0FAB3D56ACF29 /* Pods_DesafioAluraMoviesTests.framework */; };
+		E25F17C744B686DFA6268092 /* Pods_DesafioAluraMovies_DesafioAluraMoviesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 868D2B7C8C5BEF4921ADFF8E /* Pods_DesafioAluraMovies_DesafioAluraMoviesUITests.framework */; };
+		F118125529286B8200FAB8A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F118125429286B8200FAB8A0 /* AppDelegate.swift */; };
+		F118125729286B8200FAB8A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F118125629286B8200FAB8A0 /* SceneDelegate.swift */; };
+		F118125929286B8200FAB8A0 /* MoviesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F118125829286B8200FAB8A0 /* MoviesController.swift */; };
+		F118125E29286B8400FAB8A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F118125D29286B8400FAB8A0 /* Assets.xcassets */; };
+		F118126129286B8400FAB8A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F118125F29286B8400FAB8A0 /* LaunchScreen.storyboard */; };
+		F118126C29286B8400FAB8A0 /* DesafioAluraMoviesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F118126B29286B8400FAB8A0 /* DesafioAluraMoviesTests.swift */; };
+		F118127629286B8400FAB8A0 /* DesafioAluraMoviesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F118127529286B8400FAB8A0 /* DesafioAluraMoviesUITests.swift */; };
+		F118127829286B8400FAB8A0 /* DesafioAluraMoviesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F118127729286B8400FAB8A0 /* DesafioAluraMoviesUITestsLaunchTests.swift */; };
+		F11812872928725200FAB8A0 /* MoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11812862928725200FAB8A0 /* MoviesView.swift */; };
+		F118128A2928813400FAB8A0 /* CellsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11812892928813400FAB8A0 /* CellsView.swift */; };
+		F118128C2928847300FAB8A0 /* CellsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F118128B2928847300FAB8A0 /* CellsController.swift */; };
+		F118129A2929D66800FAB8A0 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11812992929D66800FAB8A0 /* Movies.swift */; };
+		F118129C2929D75A00FAB8A0 /* GetMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = F118129B2929D75A00FAB8A0 /* GetMovies.swift */; };
+		F118129E2929DC1D00FAB8A0 /* ControllerMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = F118129D2929DC1D00FAB8A0 /* ControllerMovies.swift */; };
+		F144A7442931093400718242 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F144A7432931093400718242 /* DetailController.swift */; };
+		F155D0B3292D9769003A899A /* BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F155D0B2292D9769003A899A /* BackgroundColor.swift */; };
+		F1BF2985292EEFF800E55100 /* LabelDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BF2984292EEFF800E55100 /* LabelDefault.swift */; };
+		F1BF2987292EF26100E55100 /* ImageViewDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BF2986292EF26100E55100 /* ImageViewDefault.swift */; };
+		F1BF2989292EF3CD00E55100 /* TableViewDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BF2988292EF3CD00E55100 /* TableViewDefault.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F118126829286B8400FAB8A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F118124929286B8200FAB8A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F118125029286B8200FAB8A0;
+			remoteInfo = DesafioAluraMovies;
+		};
+		F118127229286B8400FAB8A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F118124929286B8200FAB8A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F118125029286B8200FAB8A0;
+			remoteInfo = DesafioAluraMovies;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02C43B4A37AF1BB7CF6E471B /* Pods-DesafioAluraMovies-DesafioAluraMoviesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioAluraMovies-DesafioAluraMoviesUITests.debug.xcconfig"; path = "Target Support Files/Pods-DesafioAluraMovies-DesafioAluraMoviesUITests/Pods-DesafioAluraMovies-DesafioAluraMoviesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1FAA4889B4D7BDA7E171E988 /* Pods_DesafioAluraMovies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesafioAluraMovies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26DED18E97260B3EAC00E4B3 /* Pods-DesafioAluraMoviesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioAluraMoviesTests.debug.xcconfig"; path = "Target Support Files/Pods-DesafioAluraMoviesTests/Pods-DesafioAluraMoviesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		444E110F61BDFFAC7F2CECFB /* Pods-DesafioAluraMovies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioAluraMovies.debug.xcconfig"; path = "Target Support Files/Pods-DesafioAluraMovies/Pods-DesafioAluraMovies.debug.xcconfig"; sourceTree = "<group>"; };
+		868D2B7C8C5BEF4921ADFF8E /* Pods_DesafioAluraMovies_DesafioAluraMoviesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesafioAluraMovies_DesafioAluraMoviesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BC89DAD99E0FAB3D56ACF29 /* Pods_DesafioAluraMoviesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesafioAluraMoviesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBA7B22398A0D46C047E399C /* Pods-DesafioAluraMoviesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioAluraMoviesTests.release.xcconfig"; path = "Target Support Files/Pods-DesafioAluraMoviesTests/Pods-DesafioAluraMoviesTests.release.xcconfig"; sourceTree = "<group>"; };
+		C4EEF8BA845BE2EA0A5AFAE2 /* Pods-DesafioAluraMovies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioAluraMovies.release.xcconfig"; path = "Target Support Files/Pods-DesafioAluraMovies/Pods-DesafioAluraMovies.release.xcconfig"; sourceTree = "<group>"; };
+		C58A26F919C925B49B729A2F /* Pods-DesafioAluraMovies-DesafioAluraMoviesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioAluraMovies-DesafioAluraMoviesUITests.release.xcconfig"; path = "Target Support Files/Pods-DesafioAluraMovies-DesafioAluraMoviesUITests/Pods-DesafioAluraMovies-DesafioAluraMoviesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F118125129286B8200FAB8A0 /* DesafioAluraMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesafioAluraMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F118125429286B8200FAB8A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F118125629286B8200FAB8A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F118125829286B8200FAB8A0 /* MoviesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesController.swift; sourceTree = "<group>"; };
+		F118125D29286B8400FAB8A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F118126029286B8400FAB8A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F118126229286B8400FAB8A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F118126729286B8400FAB8A0 /* DesafioAluraMoviesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesafioAluraMoviesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F118126B29286B8400FAB8A0 /* DesafioAluraMoviesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesafioAluraMoviesTests.swift; sourceTree = "<group>"; };
+		F118127129286B8400FAB8A0 /* DesafioAluraMoviesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesafioAluraMoviesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F118127529286B8400FAB8A0 /* DesafioAluraMoviesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesafioAluraMoviesUITests.swift; sourceTree = "<group>"; };
+		F118127729286B8400FAB8A0 /* DesafioAluraMoviesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesafioAluraMoviesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F11812862928725200FAB8A0 /* MoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesView.swift; sourceTree = "<group>"; };
+		F11812892928813400FAB8A0 /* CellsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellsView.swift; sourceTree = "<group>"; };
+		F118128B2928847300FAB8A0 /* CellsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellsController.swift; sourceTree = "<group>"; };
+		F11812992929D66800FAB8A0 /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
+		F118129B2929D75A00FAB8A0 /* GetMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMovies.swift; sourceTree = "<group>"; };
+		F118129D2929DC1D00FAB8A0 /* ControllerMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerMovies.swift; sourceTree = "<group>"; };
+		F144A7432931093400718242 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
+		F155D0B2292D9769003A899A /* BackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundColor.swift; sourceTree = "<group>"; };
+		F1BF2984292EEFF800E55100 /* LabelDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelDefault.swift; sourceTree = "<group>"; };
+		F1BF2986292EF26100E55100 /* ImageViewDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewDefault.swift; sourceTree = "<group>"; };
+		F1BF2988292EF3CD00E55100 /* TableViewDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDefault.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F118124E29286B8200FAB8A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				495C11FA008A79273C08B014 /* Pods_DesafioAluraMovies.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F118126429286B8400FAB8A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A65026B0EE8E73A378162FC /* Pods_DesafioAluraMoviesTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F118126E29286B8400FAB8A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E25F17C744B686DFA6268092 /* Pods_DesafioAluraMovies_DesafioAluraMoviesUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC12BC843ACF97DFC82E10E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				444E110F61BDFFAC7F2CECFB /* Pods-DesafioAluraMovies.debug.xcconfig */,
+				C4EEF8BA845BE2EA0A5AFAE2 /* Pods-DesafioAluraMovies.release.xcconfig */,
+				02C43B4A37AF1BB7CF6E471B /* Pods-DesafioAluraMovies-DesafioAluraMoviesUITests.debug.xcconfig */,
+				C58A26F919C925B49B729A2F /* Pods-DesafioAluraMovies-DesafioAluraMoviesUITests.release.xcconfig */,
+				26DED18E97260B3EAC00E4B3 /* Pods-DesafioAluraMoviesTests.debug.xcconfig */,
+				BBA7B22398A0D46C047E399C /* Pods-DesafioAluraMoviesTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AE46ADAA8D5972409E2D128A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1FAA4889B4D7BDA7E171E988 /* Pods_DesafioAluraMovies.framework */,
+				868D2B7C8C5BEF4921ADFF8E /* Pods_DesafioAluraMovies_DesafioAluraMoviesUITests.framework */,
+				8BC89DAD99E0FAB3D56ACF29 /* Pods_DesafioAluraMoviesTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F118124829286B8200FAB8A0 = {
+			isa = PBXGroup;
+			children = (
+				F118125329286B8200FAB8A0 /* DesafioAluraMovies */,
+				F118126A29286B8400FAB8A0 /* DesafioAluraMoviesTests */,
+				F118127429286B8400FAB8A0 /* DesafioAluraMoviesUITests */,
+				F118125229286B8200FAB8A0 /* Products */,
+				AC12BC843ACF97DFC82E10E1 /* Pods */,
+				AE46ADAA8D5972409E2D128A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F118125229286B8200FAB8A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F118125129286B8200FAB8A0 /* DesafioAluraMovies.app */,
+				F118126729286B8400FAB8A0 /* DesafioAluraMoviesTests.xctest */,
+				F118127129286B8400FAB8A0 /* DesafioAluraMoviesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F118125329286B8200FAB8A0 /* DesafioAluraMovies */ = {
+			isa = PBXGroup;
+			children = (
+				F155D0B0292D96E3003A899A /* Infrastructure */,
+				F118128F292888DE00FAB8A0 /* Request */,
+				F118128E292888D800FAB8A0 /* Model */,
+				F118128D292888C600FAB8A0 /* Controller */,
+				F11812852928722700FAB8A0 /* View */,
+				F11812842928705F00FAB8A0 /* Resource */,
+				F118126229286B8400FAB8A0 /* Info.plist */,
+			);
+			path = DesafioAluraMovies;
+			sourceTree = "<group>";
+		};
+		F118126A29286B8400FAB8A0 /* DesafioAluraMoviesTests */ = {
+			isa = PBXGroup;
+			children = (
+				F118126B29286B8400FAB8A0 /* DesafioAluraMoviesTests.swift */,
+			);
+			path = DesafioAluraMoviesTests;
+			sourceTree = "<group>";
+		};
+		F118127429286B8400FAB8A0 /* DesafioAluraMoviesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F118127529286B8400FAB8A0 /* DesafioAluraMoviesUITests.swift */,
+				F118127729286B8400FAB8A0 /* DesafioAluraMoviesUITestsLaunchTests.swift */,
+			);
+			path = DesafioAluraMoviesUITests;
+			sourceTree = "<group>";
+		};
+		F11812842928705F00FAB8A0 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F118125629286B8200FAB8A0 /* SceneDelegate.swift */,
+				F118125429286B8200FAB8A0 /* AppDelegate.swift */,
+				F118125D29286B8400FAB8A0 /* Assets.xcassets */,
+				F118125F29286B8400FAB8A0 /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		F11812852928722700FAB8A0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F144A7422931090F00718242 /* Detail */,
+				F11812902928890400FAB8A0 /* Movies */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F11812882928811200FAB8A0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F118128B2928847300FAB8A0 /* CellsController.swift */,
+				F11812892928813400FAB8A0 /* CellsView.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F118128D292888C600FAB8A0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F118129D2929DC1D00FAB8A0 /* ControllerMovies.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F118128E292888D800FAB8A0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F11812992929D66800FAB8A0 /* Movies.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F118128F292888DE00FAB8A0 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				F118129B2929D75A00FAB8A0 /* GetMovies.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		F11812902928890400FAB8A0 /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				F118125829286B8200FAB8A0 /* MoviesController.swift */,
+				F11812862928725200FAB8A0 /* MoviesView.swift */,
+				F11812882928811200FAB8A0 /* Cells */,
+			);
+			path = Movies;
+			sourceTree = "<group>";
+		};
+		F144A7422931090F00718242 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				F144A7432931093400718242 /* DetailController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		F155D0B0292D96E3003A899A /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				F1BF2983292EEFCE00E55100 /* Componets */,
+				F155D0B1292D96EF003A899A /* Extensions */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		F155D0B1292D96EF003A899A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F155D0B2292D9769003A899A /* BackgroundColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F1BF2983292EEFCE00E55100 /* Componets */ = {
+			isa = PBXGroup;
+			children = (
+				F1BF2984292EEFF800E55100 /* LabelDefault.swift */,
+				F1BF2986292EF26100E55100 /* ImageViewDefault.swift */,
+				F1BF2988292EF3CD00E55100 /* TableViewDefault.swift */,
+			);
+			path = Componets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F118125029286B8200FAB8A0 /* DesafioAluraMovies */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F118127B29286B8400FAB8A0 /* Build configuration list for PBXNativeTarget "DesafioAluraMovies" */;
+			buildPhases = (
+				583EE4E13BFE1129937309F3 /* [CP] Check Pods Manifest.lock */,
+				F118124D29286B8200FAB8A0 /* Sources */,
+				F118124E29286B8200FAB8A0 /* Frameworks */,
+				F118124F29286B8200FAB8A0 /* Resources */,
+				BED6AC38137DDC727B085060 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DesafioAluraMovies;
+			productName = DesafioAluraMovies;
+			productReference = F118125129286B8200FAB8A0 /* DesafioAluraMovies.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F118126629286B8400FAB8A0 /* DesafioAluraMoviesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F118127E29286B8400FAB8A0 /* Build configuration list for PBXNativeTarget "DesafioAluraMoviesTests" */;
+			buildPhases = (
+				B7E8BC296775B0D660B1FD98 /* [CP] Check Pods Manifest.lock */,
+				F118126329286B8400FAB8A0 /* Sources */,
+				F118126429286B8400FAB8A0 /* Frameworks */,
+				F118126529286B8400FAB8A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F118126929286B8400FAB8A0 /* PBXTargetDependency */,
+			);
+			name = DesafioAluraMoviesTests;
+			productName = DesafioAluraMoviesTests;
+			productReference = F118126729286B8400FAB8A0 /* DesafioAluraMoviesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F118127029286B8400FAB8A0 /* DesafioAluraMoviesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F118128129286B8400FAB8A0 /* Build configuration list for PBXNativeTarget "DesafioAluraMoviesUITests" */;
+			buildPhases = (
+				DD14F81AC787B7CD0FB081B9 /* [CP] Check Pods Manifest.lock */,
+				F118126D29286B8400FAB8A0 /* Sources */,
+				F118126E29286B8400FAB8A0 /* Frameworks */,
+				F118126F29286B8400FAB8A0 /* Resources */,
+				80E3AB40E3957F9E3B3AA386 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F118127329286B8400FAB8A0 /* PBXTargetDependency */,
+			);
+			name = DesafioAluraMoviesUITests;
+			productName = DesafioAluraMoviesUITests;
+			productReference = F118127129286B8400FAB8A0 /* DesafioAluraMoviesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F118124929286B8200FAB8A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					F118125029286B8200FAB8A0 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					F118126629286B8400FAB8A0 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = F118125029286B8200FAB8A0;
+					};
+					F118127029286B8400FAB8A0 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = F118125029286B8200FAB8A0;
+					};
+				};
+			};
+			buildConfigurationList = F118124C29286B8200FAB8A0 /* Build configuration list for PBXProject "DesafioAluraMovies" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F118124829286B8200FAB8A0;
+			productRefGroup = F118125229286B8200FAB8A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F118125029286B8200FAB8A0 /* DesafioAluraMovies */,
+				F118126629286B8400FAB8A0 /* DesafioAluraMoviesTests */,
+				F118127029286B8400FAB8A0 /* DesafioAluraMoviesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F118124F29286B8200FAB8A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F118126129286B8400FAB8A0 /* LaunchScreen.storyboard in Resources */,
+				F118125E29286B8400FAB8A0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F118126529286B8400FAB8A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F118126F29286B8400FAB8A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		583EE4E13BFE1129937309F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DesafioAluraMovies-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80E3AB40E3957F9E3B3AA386 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DesafioAluraMovies-DesafioAluraMoviesUITests/Pods-DesafioAluraMovies-DesafioAluraMoviesUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DesafioAluraMovies-DesafioAluraMoviesUITests/Pods-DesafioAluraMovies-DesafioAluraMoviesUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DesafioAluraMovies-DesafioAluraMoviesUITests/Pods-DesafioAluraMovies-DesafioAluraMoviesUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7E8BC296775B0D660B1FD98 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DesafioAluraMoviesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BED6AC38137DDC727B085060 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DesafioAluraMovies/Pods-DesafioAluraMovies-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DesafioAluraMovies/Pods-DesafioAluraMovies-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DesafioAluraMovies/Pods-DesafioAluraMovies-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD14F81AC787B7CD0FB081B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DesafioAluraMovies-DesafioAluraMoviesUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F118124D29286B8200FAB8A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F118125929286B8200FAB8A0 /* MoviesController.swift in Sources */,
+				F11812872928725200FAB8A0 /* MoviesView.swift in Sources */,
+				F118129A2929D66800FAB8A0 /* Movies.swift in Sources */,
+				F118128A2928813400FAB8A0 /* CellsView.swift in Sources */,
+				F1BF2989292EF3CD00E55100 /* TableViewDefault.swift in Sources */,
+				F118125529286B8200FAB8A0 /* AppDelegate.swift in Sources */,
+				F1BF2985292EEFF800E55100 /* LabelDefault.swift in Sources */,
+				F118129C2929D75A00FAB8A0 /* GetMovies.swift in Sources */,
+				F144A7442931093400718242 /* DetailController.swift in Sources */,
+				F118125729286B8200FAB8A0 /* SceneDelegate.swift in Sources */,
+				F1BF2987292EF26100E55100 /* ImageViewDefault.swift in Sources */,
+				F155D0B3292D9769003A899A /* BackgroundColor.swift in Sources */,
+				F118128C2928847300FAB8A0 /* CellsController.swift in Sources */,
+				F118129E2929DC1D00FAB8A0 /* ControllerMovies.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F118126329286B8400FAB8A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F118126C29286B8400FAB8A0 /* DesafioAluraMoviesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F118126D29286B8400FAB8A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F118127629286B8400FAB8A0 /* DesafioAluraMoviesUITests.swift in Sources */,
+				F118127829286B8400FAB8A0 /* DesafioAluraMoviesUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F118126929286B8400FAB8A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F118125029286B8200FAB8A0 /* DesafioAluraMovies */;
+			targetProxy = F118126829286B8400FAB8A0 /* PBXContainerItemProxy */;
+		};
+		F118127329286B8400FAB8A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F118125029286B8200FAB8A0 /* DesafioAluraMovies */;
+			targetProxy = F118127229286B8400FAB8A0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F118125F29286B8400FAB8A0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F118126029286B8400FAB8A0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F118127929286B8400FAB8A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F118127A29286B8400FAB8A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F118127C29286B8400FAB8A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 444E110F61BDFFAC7F2CECFB /* Pods-DesafioAluraMovies.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DesafioAluraMovies/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = s.DesafioAluraMovies;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F118127D29286B8400FAB8A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4EEF8BA845BE2EA0A5AFAE2 /* Pods-DesafioAluraMovies.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DesafioAluraMovies/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = s.DesafioAluraMovies;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F118127F29286B8400FAB8A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26DED18E97260B3EAC00E4B3 /* Pods-DesafioAluraMoviesTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = s.DesafioAluraMoviesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DesafioAluraMovies.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DesafioAluraMovies";
+			};
+			name = Debug;
+		};
+		F118128029286B8400FAB8A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBA7B22398A0D46C047E399C /* Pods-DesafioAluraMoviesTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = s.DesafioAluraMoviesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DesafioAluraMovies.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DesafioAluraMovies";
+			};
+			name = Release;
+		};
+		F118128229286B8400FAB8A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02C43B4A37AF1BB7CF6E471B /* Pods-DesafioAluraMovies-DesafioAluraMoviesUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = s.DesafioAluraMoviesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DesafioAluraMovies;
+			};
+			name = Debug;
+		};
+		F118128329286B8400FAB8A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C58A26F919C925B49B729A2F /* Pods-DesafioAluraMovies-DesafioAluraMoviesUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = s.DesafioAluraMoviesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DesafioAluraMovies;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F118124C29286B8200FAB8A0 /* Build configuration list for PBXProject "DesafioAluraMovies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F118127929286B8400FAB8A0 /* Debug */,
+				F118127A29286B8400FAB8A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F118127B29286B8400FAB8A0 /* Build configuration list for PBXNativeTarget "DesafioAluraMovies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F118127C29286B8400FAB8A0 /* Debug */,
+				F118127D29286B8400FAB8A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F118127E29286B8400FAB8A0 /* Build configuration list for PBXNativeTarget "DesafioAluraMoviesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F118127F29286B8400FAB8A0 /* Debug */,
+				F118128029286B8400FAB8A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F118128129286B8400FAB8A0 /* Build configuration list for PBXNativeTarget "DesafioAluraMoviesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F118128229286B8400FAB8A0 /* Debug */,
+				F118128329286B8400FAB8A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F118124929286B8200FAB8A0 /* Project object */;
+}

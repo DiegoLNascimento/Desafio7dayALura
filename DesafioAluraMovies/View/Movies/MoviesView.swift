@@ -17,7 +17,6 @@ class MoviesView: UIView {
         super.init(frame: frame)
         addView()
         setConstraints()
-        backgroundColor = UIColor(red: 46/255, green: 19/255, blue: 113/255, alpha: 1.0)
     }
     
     required init?(coder: NSCoder) {

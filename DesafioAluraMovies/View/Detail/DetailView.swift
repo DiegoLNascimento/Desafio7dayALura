@@ -21,7 +21,6 @@ class DetailView: UIView {
         super.init(frame: frame)
         addview()
         setConstraints()
-        backgroundColor = UIColor(red: 46/255, green: 19/255, blue: 113/255, alpha: 1.0)
 
     }
     

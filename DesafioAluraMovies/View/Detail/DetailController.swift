@@ -18,7 +18,11 @@ class DetailController: UIViewController {
         super.viewDidLoad()
         setCustonMovieDetail()
         dataMovies()
-        
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        setBackgroundColor()
     }
     
     func dataMovies() {

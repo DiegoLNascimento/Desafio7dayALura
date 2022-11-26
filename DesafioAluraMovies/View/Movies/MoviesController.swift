@@ -21,7 +21,11 @@ class MoviesController: UIViewController {
         setcustonMovies()
         request()
         setDelegateDatasorce()
-        
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        setBackgroundColor()
     }
     
     func setcustonMovies() {
@@ -59,7 +63,7 @@ extension MoviesController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 140
+        return 150
     }
 }
 

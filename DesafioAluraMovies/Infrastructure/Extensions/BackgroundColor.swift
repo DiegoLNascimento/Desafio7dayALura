@@ -7,15 +7,15 @@
 
 import UIKit
 
-extension UIView {
+extension UIViewController {
     
     func setBackgroundColor() {
         let gradient = CAGradientLayer()
-        gradient.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height)
+        gradient.frame = view.bounds
         gradient.colors = [UIColor(red: 46/255, green: 19/255, blue: 113/255, alpha: 1.0).cgColor,
                            UIColor(red: 19/255, green: 11/255, blue: 43/255, alpha: 1.0).cgColor]
-        gradient.startPoint = CGPoint(x: 0, y: 0)
+        gradient.startPoint = CGPoint(x: 1, y: 0)
         gradient.endPoint = CGPoint(x: 0, y: 1)
-        layer.addSublayer(gradient)
+        view.layer.insertSublayer(gradient, at: 0)
     }
 }
